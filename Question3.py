@@ -5,3 +5,15 @@ Examples:
 8=> returns true
 6=> returns false
 """
+import math
+def power(integer):
+    if integer <=0:
+        return False
+    elif math.log2(integer).is_integer():
+        return True
+    else:
+        return False
+
+while True:
+    integer = int(input("Enter an interger: "))
+    power(integer)
