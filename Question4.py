@@ -6,3 +6,13 @@ Examples:
 "hi"=> returns "Hi"
 "i love programming"=> returns "I Love Programming"
 """
+
+def capitalizes(string):
+    words = string.split()
+    for word in words:
+        words[words.index(word)] = word.capitalize()
+    return " ".join(words)
+
+while True:
+    string = str(input("Enter a string: "))
+    capitalizes(string)
