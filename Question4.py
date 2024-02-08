@@ -11,6 +11,7 @@ def capitalizes(string):
     words = string.split()
     for word in words:
         words[words.index(word)] = word.capitalize()
+    print(" ".join(words))
     return " ".join(words)
 
 while True:

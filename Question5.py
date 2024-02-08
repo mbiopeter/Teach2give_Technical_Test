@@ -13,11 +13,9 @@ def reverse_int(integer):
     numberString = str(integer)
     if numberString[0] == "-":
         reversedNum = "-" + numberString[:0:-1]
-        print(reversedNum)
         return reversedNum
     else:
         reversedNum = numberString[::-1]
-        print(reversedNum)
         return reversedNum
 
 
